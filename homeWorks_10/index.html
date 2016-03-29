@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Work 10</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/nice-select.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="js/jquery.jcarousel.min.js"></script>
+    <script src="js/jquery.nice-select.js"></script>
+    <script src="js/iphone-style-checkboxes.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+<div class="navigation clearfix">
+    <nav>
+        <ul class="content">
+            <li><a href="#">Nav 1</a></li>
+            <li class="dropdown">
+                <a href="#">Nav 2</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Nav 2.1</a></li>
+                    <li><a href="#">Nav 2.2</a></li>
+                    <li><a href="#">Nav 2.3</a></li>
+                    <li class="dropdown">
+                        <a class="lastItem" href="#">Nav 2.4</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Nav 2.4.1</a></li>
+                            <li><a href="#">Nav 2.4.2</a></li>
+                            <li><a class="lastItem" href="#">Nav 2.4.3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Nav 3</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Nav 3.1</a></li>
+                    <li><a href="#">Nav 3.2</a></li>
+                    <li><a href="#">Nav 3.3</a></li>
+                    <li class="dropdown ">
+                        <a href="#">Nav 3.4</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Nav 3.4.1</a></li>
+                            <li class="dropdown">
+                                <a href="#">Nav 3.4.2</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Nav 3.4.2.1</a></li>
+                                    <li><a href="#">Nav 3.4.2.2</a></li>
+                                    <li><a href="#">Nav 3.4.2.3</a></li>
+                                    <li><a href="#">Nav 3.4.2.4</a></li>
+                                    <li><a class="lastItem" href="#">Nav 3.4.2.5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Nav 3.4.3</a></li>
+                            <li><a href="#">Nav 3.4.4</a></li>
+                            <li><a class="lastItem" href="#">Nav 3.4.5</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="lastItem" href="#">Nav 3.5</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Nav 4</a></li>
+            <li class="dropdown">
+                <a href="#">Nav 5</a>
+                <ul class="sub-menu">
+                    <li class="dropdown">
+                        <a href="#">Nav 5.1 </a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Nav 5.1.1</a></li>
+                            <li><a class="lastItem" href="#">Nav 5.1.2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Nav 5.2 </a></li>
+                    <li><a href="#">Nav 5.3 </a></li>
+                    <li><a href="#">Nav 5.4 </a></li>
+                    <li><a class="lastItem" href="#">Nav 5.5 </a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="list">
+        <select class="right">
+            <option value="1">List Item 1</option>
+            <option value="2">List Item 2</option>
+            <option value="3" selected>List Item 3</option>
+            <option value="4">List Item 4</option>
+            <option value="5">List Item 5</option>
+            <option value="6">List Item 6</option>
+        </select>
+
+    </div>
+</div>
+<div class="wrap_jcarousel">
+    <div class="jcarousel">
+        <ul>
+            <li><img src="img/carousel_1.jpg" alt=""/></li>
+            <li><img src="img/carousel_2.jpg" alt=""/></li>
+            <li><img src="img/carousel_3.jpg" alt=""/></li>
+            <li><img src="img/carousel_4.jpg" alt=""/></li>
+            <li><img src="img/carousel_5.jpg" alt=""/></li>
+            <li><img src="img/carousel_6.jpg" alt=""/></li>
+        </ul>
+    </div>
+    <a class="jcarousel-prev" href="#"> &lsaquo; </a>
+    <a class="jcarousel-next" href="#"> &rsaquo; </a>
+    <p class="jcarousel-pagination"></p>
+</div>
+<div class="elements">
+
+
+    <div class="boxes">
+
+        <input type="checkbox" id="box-1">
+        <label for="box-1">Unchecked CSS Checkbox</label>
+
+        <input type="checkbox" id="box-2" checked>
+        <label for="box-2">Checked CSS Checkbox</label>
+
+        <input type="checkbox" id="box-3" disabled>
+        <label for="box-3">Disabled unchecked</label>
+
+        <input type="checkbox" id="box-4" disabled checked>
+        <label for="box-4">Disabled checked</label>
+    </div>
+    <div class="jQueryCheckbox">
+
+        <input type="checkbox" id="check-1"/>
+        <label for="check-1">Unchecked jQuery Checkbox</label>
+        <input type="checkbox" id="check-2" checked="checked"/>
+        <label for="check-2">Checked jQuery Checkbox</label>
+        <input type="checkbox" id="check-3" disabled/>
+        <label for="check-3">Disabled jQuery Checkbox</label>
+    </div>
+
+</div>
+</body>
+</html>

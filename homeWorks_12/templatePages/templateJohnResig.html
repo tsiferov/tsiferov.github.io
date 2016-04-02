@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>John Resig's Template</title>
+    <link href="../css/templateStyle.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="../js/template.js"></script>
+    <script src="../js/templateJohnResig.js"></script>
+</head>
+<body>
+<script type="text/html" id="pattern">
+    <div class="front">
+        <div class="header">
+            <h1><%= name%></h1>
+            <img src="<%=urlFoto%>" alt="My Foto">
+        </div>
+        <div>
+            <p><%= status%></p>
+            <hr>
+            <p><%= want%></p>
+            <ul>
+                <% for(var i = 0; i < listItem.length; i++){%>
+                <li><%= listItem[i]%></li>
+                <%}%>
+            </ul>
+            <hr>
+            <p>Мой контактный телефон:<br><%= phon%></p>
+            <p>Skype:<br><%= skype%></p>
+            <p><a href="<%=urlFacebook%>" target="_blank">My Facebook</a></p>
+            <hr>
+            <p>Мой фидбек:<br><%= feedback%></p>
+        </div>
+    </div>
+</script>
+</body>
+</html>

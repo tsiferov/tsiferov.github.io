@@ -118,6 +118,7 @@ legend {
 .prompt {
     display: none;
     width: 215px;
+    height: 20px;
     position: absolute;
     top: 0;
     left: 265px;

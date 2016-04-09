@@ -3,8 +3,11 @@
  */
 
 var responseObj;
+/*var userRequest;*/
 
 function fCallback(jqueryObj, data){
+
+    console.log(data);
 
     responseObj = data.results;
 
@@ -20,9 +23,8 @@ function fCallback(jqueryObj, data){
 
 $(function(){
 
-  $("form").on("submit",function(){
+  $("#searchButton").on("click",function(){
 
-      event.preventDefault();
       var userRequest = $("#searchInput").val();
 
       $.ajax({

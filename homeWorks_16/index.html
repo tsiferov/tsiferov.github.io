@@ -11,18 +11,18 @@
 <body>
 <div class="requestForm">
     <img src="img/googlelogo_color_270x104dp.png" class="logo" alt="">
-    <!--<form action="#" name="form">-->
+    <form action="#" name="form">
         <input type="text" id="searchInput" name="q" value=""
                placeholder="Введите запрос для поиска в Google или укажите URL">
         <input type="button" id="searchButton" value="  поиск  ">
-    <!--</form>-->
+    </form>
 </div>
 <main></main>
 <script type="text/html" id="pattern">
     <% for (var i = 0; i < responseObj.length; i++) { %>
     <div class="responseBox">
-        <a href="<%= responseObj[i].unescapedUrl %>"><%= responseObj[i].titleNoFormatting %></a>
-        <p class="url"><%= responseObj[i].unescapedUrl %></p>
+        <a href="<%= responseObj[i].unescapedUrl %>"><%= responseObj[i].title %></a>
+        <p class="url"><%= decodeURI(responseObj[i].unescapedUrl) %></p>
         <p class="content"><%= responseObj[i].content %></p>
     </div>
     <% } %>

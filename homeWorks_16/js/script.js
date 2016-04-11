@@ -38,4 +38,38 @@ $(function () {
             sendRequest();
         }
     });
+
+    function Human(name, age, sex, height, weight){
+        this.name = name;
+            this.age = age;
+            this.sex =  sex;
+            this.height =  height;
+            this.weight =  weight;
+    }
+
+    function Worker(wPlace, salary){
+        this.placeOfWork = wPlace;
+        this.salary = salary;
+        this.toWork = function(){
+            console.log("I'm working!");
+        };
+    }
+
+    Worker.prototype = new Human("John", 99, "man", 180, 72);
+
+    function Student(sPlace, grants){
+        this.placeOfStudy = sPlace;
+        this.grants = grants;
+        this.watchTV = function(){
+            console.log("I'm watching TV shows!");
+        }
+    }
+
+    Student.prototype = new Human("Vasya", 18, "man", 180, 72);
+
+    var worker1 = new Worker("Bank of America", 50000);
+    var student1 = new Student("KPI", 30);
+
+    console.log("worker1:", worker1, "worker1.name:", worker1.name);
+    console.log("student1:", student1, "student1.weight:", student1.weight, "student1.age:", student1.age);
 });

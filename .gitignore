@@ -1,2 +1,5 @@
 #WebStorm
 .idea
+
+#Grunt
+node_modules/*

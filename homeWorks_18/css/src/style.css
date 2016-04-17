@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans-light-webfont.eot');
+    src: url('../fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+    url('../fonts/opensans-light-webfont.woff') format('woff'),
+    url('../fonts/OpenSans-Light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 960px;
+    margin: 20px auto;
+    padding: 25px 0;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    box-shadow: 0 0 5px #000;
+}
+
+h1 {
+    font-family: 'Open Sans', Arial, sans-serif;
+    text-align: center;
+    color: #1E90FF;
+    padding: 25px 0;
+}
+
+.buttons{
+    width: 100%;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.templBut{
+    width: 150px;
+    margin: 0 50px;
+    color: #1E90FF;
+    font-size: 16px;
+    border-radius: 10px;
+    background: linear-gradient(#eeeeee, #aaaaaa);
+    border: 1px solid #aaaaaa;
+    box-shadow: 0 0 3px #1E90FF;
+}
+
+.templBut:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LoDash Template</title>
+    <link href="../css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+<body>
+<script type="text/html" id="pattern">
+    <div class="front">
+        <div class="header">
+            <h1><%= name%></h1>
+            <img class="userFoto" src="<%=urlFoto%>" alt="My Foto">
+        </div>
+        <div>
+            <p><%= status%></p>
+            <hr>
+            <p><%= want%></p>
+            <ul>
+                <% for(var i = 0; i < listItem.length; i++){%>
+                <li><%= listItem[i]%></li>
+                <%}%>
+            </ul>
+            <hr>
+            <p>Мой контактный телефон:<br><%= phon%></p>
+            <p>Skype:<br><%= skype%></p>
+            <p><a href="<%=urlFacebook%>" target="_blank">My Facebook</a></p>
+            <hr>
+            <p>Мой фидбек:<br><%= feedback%></p>
+        </div>
+    </div>
+</script>
+</body>
+</html>

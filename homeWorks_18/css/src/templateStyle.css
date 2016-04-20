@@ -12,7 +12,7 @@
 body{
     background: lightgray;
 }
-img{
+.userFoto {
     width: 135px;
     margin: 10px;
 }

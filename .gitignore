@@ -1,6 +1,6 @@
 #WebStorm
 .idea
 
-#Grunt
-
+#Grunt, Gulp
+node_modules/*
 /node_modules/*

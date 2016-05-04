@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lodash library</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="js/lodash.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+
+<script type="text/html" id="pattern">
+<header>
+    <h1>Lodash library</h1>
+</header>
+<main>
+	<section>
+		<h3>People's names, sorted by the number of their friends</h3>
+	    <ol>
+	        <% for (var i = 0; i < sortedByFriends.length; i++) { %>
+	        <li><%= sortedByFriends[i].name%> <span><%= sortedByFriends[i].friends.length + " friends"%></span>
+	        </li>
+	        <% } %>
+	    </ol>
+	</section>
+
+	<section>
+		<h3>Unique sorted skills</h3>
+		<ul>
+			<% for (var i = 0; i < sortedSkills.length; i++) { %>
+				        <li><%= sortedSkills[i]%></li>
+				        
+				        <% } %>
+		</ul>
+	</section>
+
+	<section>
+		<h3>Unique sorted friends</h3>
+		<ul>
+			<% for (var i = 0; i < sortedFriends.length; i++) { %>
+				        <li><%= sortedFriends[i]%></li>
+				        
+				        <% } %>
+		</ul>
+	</section>
+</main>
+</script>
+	
+</body>
+</html>

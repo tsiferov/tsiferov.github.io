@@ -4,3 +4,5 @@
 #Grunt, Gulp
 node_modules/*
 /node_modules/*
+#sublime
+/index.sublime-workspace

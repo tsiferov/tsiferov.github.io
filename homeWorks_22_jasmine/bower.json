@@ -1,0 +1,14 @@
+{
+  "name": "jasmine_test",
+  "description": "test project to learn jasmine",
+  "main": "script.js",
+  "authors": [
+    "tsiferov"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/tsiferov/tsiferov.github.io",
+  "devDependencies": {
+    "jquery": "^2.2.3",
+    "jasmine-jquery": "^2.1.1"
+  }
+}

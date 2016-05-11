@@ -2,6 +2,22 @@
 
 
 grunt.initConfig({
+	babel: {
+        options: {
+            sourceMap: false,
+            presets: ['es2015']
+        },
+        dist: {
+            files: [{
+                expand: true,
+                cwd: 'js/src',
+                src: ['*.js'],
+                dest: 'js/',
+                ext: '.js',
+                extDot: 'first'
+            }]
+        }
+    },
 
   jasmine: {
     test: {
@@ -23,15 +39,20 @@ grunt.initConfig({
       options: {
         livereload: true
       }
+    },
+	babel: {
+      files: 'js/src/*.js',
+      tasks: ['babel']
     }
   }
 });
 
 // 2) Load plugins
 grunt.loadNpmTasks('grunt-contrib-jasmine');
+grunt.loadNpmTasks('grunt-babel');
 grunt.loadNpmTasks('grunt-contrib-watch');
 
 // 3) Task(s) registration
-grunt.registerTask('default', ['jasmine']);
+grunt.registerTask('default', ['babel','jasmine']);
 
 };

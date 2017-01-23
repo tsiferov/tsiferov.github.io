@@ -47,7 +47,8 @@ $(function () {
             this.weight =  weight;
     }
 
-    function Worker(wPlace, salary){
+    function Worker(name, age, sex, height, weight, wPlace, salary){
+        Human.call(this, name, age, sex, height, weight);
         this.placeOfWork = wPlace;
         this.salary = salary;
         this.toWork = function(){
@@ -55,9 +56,11 @@ $(function () {
         };
     }
 
-    Worker.prototype = new Human("John", 99, "man", 180, 72);
+    /*Worker.prototype = new Human("John", 99, "man", 180, 72);*/
 
-    function Student(sPlace, grants){
+    function Student(name, age, sex, height, weight, sPlace, grants){
+        Human.call(this, name, age, sex, height, weight);
+        /*this.__proto__ = new Human(name, age, sex, height, weight);*/
         this.placeOfStudy = sPlace;
         this.grants = grants;
         this.watchTV = function(){
@@ -65,11 +68,12 @@ $(function () {
         }
     }
 
-    Student.prototype = new Human("Vasya", 18, "man", 180, 72);
+    /*Student.prototype = new Human("Vasya", 18, "man", 180, 72);*/
 
-    var worker1 = new Worker("Bank of America", 50000);
-    var student1 = new Student("KPI", 30);
+    var worker1 = new Worker("John", 99, "man", 180, 72, "Bank of America", 50000);
+    var student1 = new Student("Vasya", 18, "man", 180, 72, "KPI", 30);
 
-    console.log("worker1:", worker1, "worker1.name:", worker1.name);
-    console.log("student1:", student1, "student1.weight:", student1.weight, "student1.age:", student1.age);
+    console.log("worker:", worker1, "worker.name:", worker1.name);
+    console.log("student:", student1, "student.name:", student1.name, "student.age:", student1.age);
+
 });

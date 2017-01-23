@@ -1,8 +1,10 @@
 #WebStorm
 .idea
 
-#Grunt, Gulp
-node_modules/*
+#Grunt
+node_modules/
 /node_modules/*
 #sublime
 /index.sublime-workspace
+
+.sass-cache/*

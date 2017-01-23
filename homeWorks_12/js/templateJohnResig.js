@@ -19,7 +19,7 @@ $(function () {
         "обучение, в результате которого, я смогу преобрести новую профессию)",
     };
 
-    var template = $('#pattern').html();
+    var template = $('#patternJR').html();
 
     var content = tmpl(template, data);
 

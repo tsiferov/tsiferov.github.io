@@ -24,12 +24,3 @@ $(function () {
     var content = template(data);
     $('body').append(content);
 });
-/*
-
- var content = tmpl(template, data);
-
-
- listItem1: "перспективная и востребованная на рынке профессия",
- listItem2: "интересная и постоянно развивающаяся сфера деятельности",
- listItem3: "хорошие условия и достойная оплата труда",
-*/

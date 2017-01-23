@@ -1,0 +1,5 @@
+require(
+	['mod'],
+	function () {
+		// body...
+	})

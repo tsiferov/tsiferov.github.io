@@ -1,0 +1,28 @@
+
+body {
+	width: 640px;
+	height: 640px;
+	margin: 10px auto;
+	border: 1px solid rgba(203,203,203,1.00);
+	text-align: center;
+	box-shadow: 0 0 5px rgba(176,176,176,1.00);
+}
+
+ol{
+	margin: 50px;
+	text-align: left;
+	font-size: 16px;	
+}
+
+ul {
+	padding: 10px 0;
+	list-style: none;
+}
+
+input[type="checkbox"] {
+	margin: 0 10px;	
+}
+
+button {
+	font-size: 18px;	
+}

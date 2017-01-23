@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Created by TsiferovSerhii on 05.04.2016.
  */
 "use strict";
@@ -7,11 +7,11 @@ var testObj;
 
 $(function () {
 
-
     var jsonObj = JSON.stringify(testPage.questions);
     localStorage.setItem("test", jsonObj);
 
     testObj = JSON.parse(localStorage.getItem("test"));
+
 
     var template = _.template($('#pattern').html());
 

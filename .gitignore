@@ -5,3 +5,4 @@ node_modules/
 /index.sublime-workspace
 
 .sass-cache/*
+.env.local
